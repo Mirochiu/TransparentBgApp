@@ -7,11 +7,12 @@
     tools:context=".BarActivity">
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="395dp"
-        android:layout_height="340dp"
+        android:layout_width="501dp"
+        android:layout_height="297dp"
         android:background="@color/HalfDark"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="383dp">
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="praent">
 
         <TextView
             android:id="@+id/textView"
@@ -21,16 +22,18 @@
             android:textColor="@color/colorAccent"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.165"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.652" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="40dp"
             android:text="@string/button"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,8 +43,8 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="164dp"
-            android:layout_marginTop="60dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="96dp"
             android:text="@string/button2"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
